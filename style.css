@@ -1,0 +1,22 @@
+html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
+body { display: flex; flex-direction: column; }
+#map { flex: 1; min-height: 0; }
+#bar {
+  display: flex; gap: 12px; padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+  background: #1f2937;
+}
+#bar button {
+  flex: 1; font-size: 20px; font-weight: 600; padding: 16px; border: 0;
+  border-radius: 12px; color: #fff;
+}
+#bar button:active { opacity: .8; }
+.red { background: #dc2626; }
+.blue { background: #2563eb; }
+#msg {
+  position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 50%;
+  transform: translateX(-50%); z-index: 1000; max-width: 90%;
+  background: rgba(17, 24, 39, .92); color: #fff; padding: 10px 14px;
+  border-radius: 10px; font-size: 15px; text-align: center;
+}
+.pin { background: none; border: 0; }
+.pin svg { filter: drop-shadow(0 2px 2px rgba(0,0,0,.5)); }
