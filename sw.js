@@ -1,4 +1,4 @@
-const CACHE = 'here-where-v1';
+const CACHE = 'here-where-v2';
 const SHELL = [
   './', 'index.html', 'style.css', 'app.js', 'manifest.json',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
